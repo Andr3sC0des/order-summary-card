@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "red hat display", sans-serif;
+}
+
+.flag {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #2e2e2e;
+  width: 120px;
+  height: 50px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.flag:hover {
+  width: 400px;
+  color: transparent;
+}
+.flag:hover .attribution {
+  width: 400px;
+  opacity: 1;
+}
+
+.attribution {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 0;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a {
+  color: #fff;
+}
+
+html {
+  font-size: 16px;
+}
+
+.ordercon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(225deg, 100%, 94%);
+  background-position-y: -5rem;
+}
+
+.order {
+  background: #fff;
+  box-shadow: 2px 2px 5px #999;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: fit-content;
+}
+.order__details--pad {
+  padding: 1.5rem;
+}
+.order img {
+  width: 100%;
+  margin: auto;
+  max-width: 300px;
+  display: block;
+}
+.order h2 {
+  text-align: center;
+}
+.order p {
+  margin-top: 1rem;
+  max-width: 15rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: hsl(224deg, 23%, 55%);
+  text-align: center;
+}
+.order__details {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225deg, 100%, 98%);
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.order__change {
+  color: hsl(245deg, 75%, 52%);
+}
+.order__plan {
+  display: flex;
+}
+.order__plan img {
+  width: 20%;
+}
+.order__plandetails {
+  margin-left: 0.2rem;
+  font-size: 0.8rem;
+}
+.order__plandetails h4 {
+  color: hsl(224deg, 23%, 55%);
+}
+.order__anchor {
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+.order__anchor:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+.order__payment {
+  margin-top: 1rem;
+  padding: 1rem;
+  width: 90%;
+  background: hsl(245deg, 75%, 52%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.order__payment:hover {
+  opacity: 0.7;
+}
+.order__cancel {
+  margin-top: 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+}
+.order__cancel:hover {
+  opacity: 0.7;
+}
+.order__buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
